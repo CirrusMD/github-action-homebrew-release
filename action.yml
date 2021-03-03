@@ -1,0 +1,22 @@
+name: 'github-action-homebrew-release'
+description: 'Automatically update a homebrew release'
+inputs:
+  gh-token: # id of input
+    description: "this repo's GITHUB_TOKEN"
+    required: true
+  homebrew-gh-token: # id of input
+    description: "a GitHub token that corresponds with your Homebrew repo's GitHub user"
+    required: true
+  homebrew-repo:  # id of input
+    description: 'the repo where your homebrew release lives'
+    required: true
+  homebrew-repo-default-branch: # id of input
+    description: 'the repo where your homebrew release lives'
+    required: true
+    default: 'main'
+  source-template-path: # id of input
+    description: 'the source in this repo where your template lives'
+    required: true
+runs:
+  using: 'node12'
+  main: 'src/index.js'

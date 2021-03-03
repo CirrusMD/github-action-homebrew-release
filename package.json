@@ -1,0 +1,38 @@
+{
+  "name": "github-action-homebrew-release",
+  "version": "1.0.0",
+  "description": "Automatically do homebrew releases",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/index.js",
+    "all": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CirrusMD/github-action-homebrew-release.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CirrusMD/github-action-homebrew-release/issues"
+  },
+  "homepage": "https://github.com/CirrusMD/github-action-homebrew-release#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@octokit/graphql": "^4.6.0",
+    "axios": "^0.21.1",
+    "handlebars": "^4.7.7",
+    "hasha": "^5.2.2",
+    "nodegit": "^0.27.0",
+    "tmp": "^0.2.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "eslint": "^7.4.0"
+  }
+}
